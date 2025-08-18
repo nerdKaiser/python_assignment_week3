@@ -5,9 +5,8 @@ def calculate_discount(price, discount_percent):
 	else:
 		return price
 
-#Calling the function with example values
-#Example usage case 1
-print(calculate_discount(5000, 22))
+#Calling the function after user prompt
+price= float(input("Enter the price:"))
+discount_percent = float(input("Enter the discount percentage:"))
+print(f"The final price is: Sh {calculate_discount(price, discount_percent)}")
 
-#Example usage case 2
-print(calculate_discount(7000, 12))
